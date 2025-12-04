@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#wallpaper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-align: center;
+    color: white;
+    width: 80px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 60px;
+}
+
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    background: rgba(20,20,20,0.85);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 50;
+}
+
+#start-button {
+    font-size: 24px;
+    padding: 5px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#start-menu {
+    position: fixed;
+    left: 10px;
+    bottom: 55px;
+    width: 220px;
+    background: rgba(30,30,30,0.95);
+    color: white;
+    display: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.start-header {
+    background: #0078ff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.start-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.start-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.window {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    z-index: 100;
+}
+
+.window-header {
+    background: #0078ff;
+    padding: 8px;
+    color: white;
+    cursor: move;
+}
+
+.window-content {
+    height: calc(100% - 35px);
+    background: white;
+}
