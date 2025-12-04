@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows 13 — 128-bit Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="desktop">
+    <img id="wallpaper" src="assets/wallpaper.jpg">
+
+    <!-- Desktop Icons -->
+    <div class="icon" onclick="openApp('apps/notepad.html')">
+        <img src="assets/icons/notepad.png">
+        <span>Notepad</span>
+    </div>
+
+    <div class="icon" onclick="openApp('apps/filemanager.html')">
+        <img src="assets/icons/folder.png">
+        <span>Files</span>
+    </div>
+</div>
+
+<!-- Taskbar -->
+<div id="taskbar">
+    <div id="start-button" onclick="toggleStart()">⧉</div>
+    <div id="taskbar-apps"></div>
+</div>
+
+<!-- Start Menu -->
+<div id="start-menu">
+    <div class="start-header">Windows 13</div>
+
+    <div class="start-item" onclick="openApp('apps/notepad.html')">📝 Notepad</div>
+    <div class="start-item" onclick="openApp('apps/filemanager.html')">📂 File Manager</div>
+    <div class="start-item" onclick="openApp('apps/about.html')">ℹ️ About This OS</div>
+</div>
+
+<script src="os.js"></script>
+
+</body>
+</html>
