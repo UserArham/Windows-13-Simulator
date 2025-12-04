@@ -23,3 +23,8 @@ stack.setCurrentWidget(boot)
 
 stack.show()
 sys.exit(app.exec())
+
+## Run
+
+## License
+MIT
